@@ -1,0 +1,89 @@
+.about-section {
+  background: #f4f7fa;
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+.about-tagline {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 2.5rem;
+}
+
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-feature {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  max-width: 260px;
+  min-width: 200px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.about-feature h3 {
+  color: #0ab613;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.about-feature p {
+  color: #333;
+  font-size: 1rem;
+}
+
+.about-cta {
+  margin-top: 2.5rem;
+}
+
+.about-cta h2 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.about-shop-btn {
+  display: inline-block;
+  background: #0ab613;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.about-shop-btn:hover {
+  background: #0077cc;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .about-features {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}

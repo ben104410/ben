@@ -1,0 +1,184 @@
+/* Reset and base styles */
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header (optional global) */
+header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* Home background section */
+.home-background {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.home-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: linear-gradient(120deg, rgba(44,62,80,0.35), rgba(0,0,0,0.25));
+}
+
+.home-center {
+  position: relative;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 2.5rem 3.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.13);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.home-center h1 {
+  color: #22223b;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.home-center p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* CTA Button */
+.cta-btn {
+  margin-top: 1.5rem;
+  padding: 0.9rem 2.2rem;
+  background: linear-gradient(90deg, #0d6efd 60%, #00b894 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(90deg, #00b894 60%, #0d6efd 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 24px rgba(0, 184, 148, 0.18);
+}
+
+/* Home content section */
+.home-content {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Product grid */
+.home-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.home-product-card {
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1.2rem;
+  text-align: center;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.home-product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.home-product-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
