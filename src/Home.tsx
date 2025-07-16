@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       <div className="home-background">
         <img
           className="home-background-img"
-          src="shopping family.jpg"
+          src="/shopping family.jpg"
           alt="happy shopping"
         />
         <div className="home-background-overlay" />
@@ -19,30 +19,31 @@ const Home: React.FC = () => {
           </a>
         </div>
       </div>
+
       <div className="home-content" id="featured-products">
         <h2>Featured Products</h2>
         <p>Check out our latest and greatest electronics!</p>
         <div className="home-products-grid">
           <div className="home-product-card">
-            <img src="smartphone.jpg" alt="Product 1" />
+            <img src="/smartphone.jpg" alt="Smartphone" />
             <h3>Smartphone</h3>
             <p>KES 30,000</p>
           </div>
           <div className="home-product-card">
-            <img src="laptop.webp" alt="Product 2" />
+            <img src="/laptop.webp" alt="Laptop" />
             <h3>Laptop</h3>
             <p>KES 80,000</p>
           </div>
           <div className="home-product-card">
-            <img src="wireless headphones.jpg" alt="Product 3" />
+            <img src="/wireless headphones.jpg" alt="Headphones" />
             <h3>Headphones</h3>
-            <p>KES 1050</p>
+            <p>KES 1,050</p>
           </div>
         </div>
       </div>
     </section>
   );
-
 };
 
 export default Home;
+
